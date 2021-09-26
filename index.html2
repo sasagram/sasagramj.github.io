@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Wooden Jewelry</title>
+  <meta name="description" content="個性のジュエリー">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+  <div id="mainvisual">
+      <img src="img/mainvisual.jpg" alt="大草原でワンピース">
+  </div>
+
+  <header id="header">
+    <h1 class="site-title">
+      <a href="index.html"><img src="img/logo.svg" alt="Wooden Jewerly"></a></h1>
+
+    <nav>
+      <ul>
+        <li class="concept"><a href="#concept">Concept</a></li>
+        <li class="work"><a href="#work">work</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <main>
+      <section id="concept" class="content">
+        <div class="img">
+ 
+          <img src="img/concept.jpg" alt="ring" class="animate slide-from-left">
+        </div>
+        <div class="text">
+          <h2 class="section-title">私たちの考えるジュエリーとは</h2>
+          <span class="section-title-en-c">Concept</span>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+      </section>
+  
+      <section id="work" class="content">
+        <div class="text">
+          <h2 class="section-title">ハンドメイドにこだわる理由</h2>
+          <span class="section-title-en-w">Work</span>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+        </div>
+        <div class="img">
+          <img src="img/work.jpg" alt="desk" class="animate slide-from-right">
+        </div>
+      </section>  
+    </main>
+
+    <footer id="footer">
+      <div class="logo">
+        <a href="#"><img src="img/logo.svg" alt="Wooden Jewerly"></a>
+      </div>
+      <p>&copy;2021 Wooden Juerly</p>
+  
+    </footer>
+  </div>
+  <script href="js/main.js"></script>
+</body>
+</html>

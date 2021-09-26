@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+color: #2d2d2d;
+font-family: cursive;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+
+/* mainとfooterのコンテンツ幅 */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.site-title {
+  width: 110px;
+  line-height: 1px;
+  margin-right: 50px;
+}
+.site-title a {
+ display: block;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+
+.section-title-en-c,
+.section-title-en-w 
+ {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/* make up */
+.section-title-en-c {
+  background-color: lightpink;
+  width: 56px;
+  height: 30px;
+  border-radius: 50%;
+  padding-left: 1px;
+ 
+
+}
+.section-title-en-w {
+  background-color: khaki;
+  width: 45px;
+  height: 30px;
+  border-radius: 50%;
+  padding-left: 1px;
+
+}
+
+/* mainvisual/* mainvisual *//* mainvisual *//* mainvisual */
+#mainvisual {
+  width: 90vw;
+  margin: 4% auto 0 auto;
+}
+
+#header {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  padding: 32px 0;
+  margin: 0 auto 30px auto;
+}
+
+#header ul {
+  display: flex;
+}
+
+#header li {
+  font-size: 0.875rem;
+  margin-right: 30px;
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+#header li :last-child {
+  margin-right: 0;
+}
+
+/* make up */
+.concept {
+  background-color: lightpink;
+  width: 55px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.work {
+  background-color:khaki;
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+.contact {
+  background-color:lightseagreen;
+  width: 55px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+
+/* concept.work */
+.animate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.animate img {
+  width: 100%;
+}
+
+.animate .text {
+  width: 100%;
+  padding: 0 7%;
+}
+
+/* footer */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 20px 0;
+}
+
+#footer .logo {
+  width: 110px;
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  /* mainvixual */
+  #mainvisual {
+    width: 100%;
+    margin: 0;
+  }
+
+  #mainvisual img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  /* header */
+
+  #header {
+    width: 100%;
+    padding: 20px 18px;
+  }
+
+  /* concept.work */
+  #work {
+    flex-direction: column-reverse;
+  }
+  .animate {
+    flex-direction: column;
+  }
+  .animate .img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .animate .text {
+    width: 100%;
+    padding: 0;
+  }
+
+} 
+
+/* animate */
+.animate { 
+  opacity: 1;
+  transition: opacity.3s, transform.3s;
+}
+
+.animate slide-from-left {
+  transform: translateX(-40px);
+}
+
+.animate slide-from-right {
+  transform: translateX(40px);
+}
+
+.animate appear {
+  opacity: 1;
+  transform: none;
+}
